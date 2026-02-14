@@ -1,3 +1,37 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+#events-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 40px;
+  margin-top: 40px;
+  color: #1f2937;
+}
+#notification-count {
+  background: #ef4444;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  margin-left: 8px;
+  font-weight: 600;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f6f9;
@@ -12,4 +46,195 @@ h1 {
 
 #events-container {
   margin-top: 30px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+#requests-container {
+  margin-top: 30px;
+}
+
+.team-card {
+  background: white;
+  padding: 15px;
+  margin: 15px auto;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  text-align: center;
+}
+
+
+.event-card {
+  background: white;
+  width: 340px;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+h2 {
+  margin-top: 40px;
+  font-size: 28px;
+  color: #111827;
+}
+p {
+  margin: 8px 0;
+  color: #4b5563;
+}
+
+
+button:hover {
+  background-color: #0077ff;
+  color: white;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  text-align: center;
+}
+h1 {
+  font-size: 42px;
+  margin-top: 40px;
+  color: #1e293b;
+  letter-spacing: 1px;
+}
+
+
+
+.event-card {
+  background: white;
+  width: 320px;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.event-card {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.6);
+  width: 340px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+.team-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.team-btn:hover {
+  background-color: #2563eb;
+}
+
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+#notification-bell {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+#notification-count {
+  background: red;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+.admin-header {
+  text-align: center;
+  padding: 30px;
+}
+
+.admin-container {
+  width: 70%;
+  margin: auto;
+}
+
+.admin-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }

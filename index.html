@@ -7,21 +7,41 @@
 </head>
 <body>
 
+  <div class="header">
   <h1>CampusSync</h1>
-  <p>Discover. Connect. Collaborate.</p>
-
-  <div id="events-container">
-
-  <div class="event-card">
-    <h2>Hackathon 2026</h2>
-    <p><strong>Time:</strong> 9:00 AM</p>
-    <p><strong>Type:</strong> Team (3 members)</p>
-    <p><strong>Open:</strong> Yes</p>
-    <button>Need Team</button>
+  <div id="notification-bell">
+    🔔 <span id="notification-count">0</span>
   </div>
-
 </div>
 
+  <p>Discover. Connect. Collaborate.</p>
+
+  <h2>Today's Events</h2>
+<div id="events-container"></div>
+
+<h2>Team Requests</h2>
+<div id="requests-container"></div>
+
+
+<div id="team-form" style="display:none;" class="modal">
+  <div class="modal-content">
+    <h3>Request a Team</h3>
+    <input type="text" id="student-name" placeholder="Your Name" /><br><br>
+    <input type="text" id="department" placeholder="Department" /><br><br>
+    
+    <label>Gender:</label>
+    <select id="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+
+    <button id="submit-request">Submit</button>
+    <button id="auto-assign">Auto Assign Team</button>
+    <button id="close-form">Cancel</button>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
   <script src="script.js"></script>
 </body>
